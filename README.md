@@ -1,17 +1,13 @@
-# Slack scripts
+# Github actions for slack_cleaner2
 
-**Do not share token**: Please be careful.
+Github Actions automatically deletes messages in `journal-feed-general` and `journal-feed-plants` older than 14 days everyday.
 
-## Installation
-
-https://github.com/sgratzl/slack_cleaner2
-
-## Usage
-
-Delete messages in journal-feed-general and journal-feed-plants older than 30 days.
+Or manually run:
 
 ```
-python3 clean_journal.py
+# pip install slack-cleaner2
+python3 clean_journal.py ${{ secrets.SLACK_LEGACY_TOKEN }}
 ```
 
-https://github.com/sgratzl/slack-cleaner/issues/79
+Credits:
+- slack_cleaner2: Samuel Gratzl (https://github.com/sgratzl/slack_cleaner2)
