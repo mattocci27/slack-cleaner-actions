@@ -1,8 +1,7 @@
 name: Slack Cleaner
 on:
- push:
-   schedule:
-   - cron:  '0 0 * * *'
+  schedule:
+  - cron:  '0 0 * * *'
 jobs:
   clean:
     runs-on: ubuntu-latest
